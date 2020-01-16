@@ -13,26 +13,27 @@ function App(props) {
   return (
     
     <div className="App container">
-       <Navbar fluid collapseOnSelect>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <Link to="/">Game comparator</Link>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight>
-            <LinkContainer to="/signup">
-              <NavItem>Signup</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/login">
-              <NavItem>Login</NavItem>
-            </LinkContainer>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <div class="topnav">
+      <LinkContainer to="/">
+  <a class="active" href="#home">Home</a>
+  </LinkContainer>
+  <LinkContainer to="/login">
+  <a href="#login">Login</a>
+  </LinkContainer>
+  <LinkContainer to="/signup">
+  <a href="#register">Register</a>
+  </LinkContainer>
+  <LinkContainer to="/comparator">
+  <a href="#comparator">Comparator</a>
+  </LinkContainer>
+  <LinkContainer to="/gallery">
+  <a href="#gallery">Gallery</a>
+  </LinkContainer>
+  <LinkContainer to="/descriptions">
+  <a href="#descriptions">Descriptions</a>
+  </LinkContainer>
+</div>
       <Routes />
-      <Products />
     </div>
   );
 }

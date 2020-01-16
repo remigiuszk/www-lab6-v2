@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Table, Card, Button, CardTitle, CardText, Row, Col, CardImg } from 'reactstrap';
+import './products.css';
 
 class Product extends Component {
     constructor() {
@@ -49,17 +50,21 @@ handleClick(e) {
                 <Row>
                     {this.state.products.map((product, index) => (
                         <Col key={product.id}>
-                            <Card body outline engine="primary">
-                                <img height="350px" width="240px" src={require("../assets/images/" + product.img)} alt={product.name} />
-                                <CardTitle>{product.name}</CardTitle>
-                                <Button type="button" id={product.id} onClick={this.handleClick}>{(this.state.compare.arr.indexOf(product.id) < 0) ? "Compare" : "Remove"}</Button>
+                            <Card body inverse style={{ backgroundColor: '#1233', borderColor: '#333' }}>
+                            <div className="container">
+                                <img className="img" height="350px" width="240px" src={require("../assets/images/" + product.img)} alt={product.name} />
+                                <div className="middle">
+                                <CardTitle className="gameName">{product.name}</CardTitle>
+                                <Button className="buttonCompare" color="primary" size="lg" type="button" id={product.id} onClick={this.handleClick}>{(this.state.compare.arr.indexOf(product.id) < 0) ? "Compare" : "Remove"}</Button>
+                                </div>
+                                </div>
                             </Card>
                         </Col>
                     ))}
                 </Row>
 
-                <Table>
-                    <thead>
+                <Table className="table">
+                    <thead className="thead">
                         <th>Nazwa gry</th>
                         <th>Cena(niepromocyjna)</th>
                         <th>Ocena</th>
@@ -81,5 +86,4 @@ handleClick(e) {
         )
     }
 }
-
 export default Product;

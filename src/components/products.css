@@ -1,0 +1,56 @@
+.gameName{
+    font-family: "Lucida Sans Unicode";
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    background-color: rgba(139,45,118,1);
+    color: white;
+    padding: 16px 32px;
+}
+
+.img{
+        padding: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 1;
+        display: block;
+        transition: .5s ease;
+        backface-visibility: hidden;
+}
+
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .img {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .buttonCompare{
+    padding: 60px 80px;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+     transition-duration: 0.4s;
+     margin-left: auto;
+     margin-right: auto;
+  }
+
+  .table{
+      background-color: rgb(62, 203, 250);
+  }
+
+  .thead{
+      background-color: rgb(142, 201, 5);
+  }
