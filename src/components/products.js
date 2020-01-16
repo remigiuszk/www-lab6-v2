@@ -72,9 +72,9 @@ handleClick(e) {
                     {temp.map((product) => (
                         <tbody>
                             <tr>
-                                <td>{product.name}</td>
-                                <td>{product.price}</td>
-                                <td>{product.rating}</td>
+                                <td className="tdGame">{product.name}</td>
+                                <td className="tdGame">{product.price}</td>
+                                <td className="tdGame">{product.rating}</td>
                             </tr>
 
                         </tbody>
