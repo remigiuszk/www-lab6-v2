@@ -1,12 +1,79 @@
-.App {
-  background: rgba(183,222,237,1);
-  background: -moz-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(33,180,226,1) 58%, rgba(183,222,237,1) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(183,222,237,1)), color-stop(24%, rgba(113,206,239,1)), color-stop(58%, rgba(33,180,226,1)), color-stop(100%, rgba(183,222,237,1)));
-  background: -webkit-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(33,180,226,1) 58%, rgba(183,222,237,1) 100%);
-  background: -o-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(33,180,226,1) 58%, rgba(183,222,237,1) 100%);
-  background: -ms-linear-gradient(top, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(33,180,226,1) 58%, rgba(183,222,237,1) 100%);
-  background: linear-gradient(to bottom, rgba(183,222,237,1) 0%, rgba(113,206,239,1) 24%, rgba(33,180,226,1) 58%, rgba(183,222,237,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed', GradientType=0 );
+.form_block{
+  width: 400px;
+  display: table;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 5px;
+}
+.form_block > #title{
+  background: #1d1f1f;
+  padding: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-shadow: -1px -1px 0 rgba(0,0,0,.2);
+}
+.form_block > .body{
+	background: #FFFFFF;
+  padding: 40px;
+  display: table;
+}
+
+input[type='text'],input[type='password'] {
+  height: 35px;
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 4px 5px;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.loginBtn{
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  background: #f5f4ea;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.loginBtn:hover{
+  background: #c3c3ba;
+}
+.registerBtn{
+  float: right;
+  background: #1d1f1f;
+  color: #fff;
+  height: 35px;
+  box-sizing: border-box;
+  padding: 4px 10px;
+  border: 1px solid #d0d0d0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: -35px;
+}
+.registerBtn:hover{
+  background: #1d1f1f;
+}
+.Error{
+  padding: 10px;
+  background-color: #feeaea;
+  border: 1px solid #fadadb;
+  margin-bottom: 10px;
+  border-radius: 3px;
 }
 
 .App .navbar-brand {
@@ -27,6 +94,20 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.logoutButton{
+  float: right;
+  background-color:#272727;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.logoutButton:hover {
+  background-color:  rgb(255, 136, 0);
+  color: black;
 }
 
 /* Change the color of links on hover */
